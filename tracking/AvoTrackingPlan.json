@@ -1,0 +1,957 @@
+{
+  "name": "Exported Tracking Plan: main",
+  "events": [
+    {
+      "id": "mTqNACI-Dc",
+      "name": "Content viewed",
+      "description": "Tracked when different kind of content is viewed\n\nReading Content (Blog, Docs): 75% scrolldepth\nViewing Content (Video): 50% view time",
+      "tags": [],
+      "categories": [
+        "67UjdiEwa"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {
+          "properties": {
+            "type": "object",
+            "properties": {
+              "content_title": {
+                "id": "hO8QokB6hW",
+                "description": "The current title of the content",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "content_id": {
+                "id": "dq_ffocLUk",
+                "description": "unique id if the content has such one - makes it easier to track content over time when title is changed.",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "content_tags": {
+                "id": "Q8ULW3QHzA",
+                "description": "adding all tags used for this content",
+                "nameMapping": [],
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "content_platform": {
+                "id": "5X3uMzRwPo",
+                "description": "The content platform this content has been published to.",
+                "nameMapping": [],
+                "type": "string",
+                "enum": [
+                  "Blog",
+                  "LinkedIn",
+                  "Youtube",
+                  "Twitter"
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "content_title",
+              "content_id",
+              "content_tags",
+              "content_platform"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "rbIJqtHZYD",
+      "name": "Content discovered",
+      "description": "Just when someone lands on a content piece.\nLinkedIn: views\nBlog: Pageviews\nYT: Video started - 5%",
+      "tags": [],
+      "categories": [
+        "67UjdiEwa"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {}
+      }
+    },
+    {
+      "id": "7EPEc_QXys",
+      "name": "Content engagement submitted",
+      "description": "Engagement means a feedback for the content\nYoutube - like or comment\nBlog - Was useful\nLinkedIn - like or comment\nTwitter - like or comment\n",
+      "tags": [],
+      "categories": [
+        "67UjdiEwa"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {
+          "properties": {
+            "type": "object",
+            "properties": {
+              "content_title": {
+                "id": "hO8QokB6hW",
+                "description": "The current title of the content",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "content_id": {
+                "id": "dq_ffocLUk",
+                "description": "unique id if the content has such one - makes it easier to track content over time when title is changed.",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "content_tags": {
+                "id": "Q8ULW3QHzA",
+                "description": "adding all tags used for this content",
+                "nameMapping": [],
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "content_platform": {
+                "id": "5X3uMzRwPo",
+                "description": "The content platform this content has been published to.",
+                "nameMapping": [],
+                "type": "string",
+                "enum": [
+                  "Blog",
+                  "LinkedIn",
+                  "Youtube",
+                  "Twitter"
+                ]
+              },
+              "engagement_type": {
+                "id": "_wLQPc-irV",
+                "description": "The type of engagement - most often just a like but some platform use different reactions.",
+                "nameMapping": [],
+                "type": "string",
+                "enum": [
+                  "Like",
+                  "Applause",
+                  "Thoughtful"
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "content_title",
+              "content_id",
+              "content_platform",
+              "engagement_type"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "dwav2JQVWh",
+      "name": "Subscription created",
+      "description": "A valid subscription has been created for the content channel:\nBlog - Subscribed to Newsletter\nShop - Subscribed to Newsletter\nLinkedIn - Followed\nYoutube - Subscribed to Channel\n",
+      "tags": [],
+      "categories": [
+        "67UjdiEwa"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {
+          "properties": {
+            "type": "object",
+            "properties": {
+              "content_platform": {
+                "id": "5X3uMzRwPo",
+                "description": "The content platform this content has been published to.",
+                "nameMapping": [],
+                "type": "string",
+                "enum": [
+                  "Blog",
+                  "LinkedIn",
+                  "Youtube",
+                  "Twitter"
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "content_platform"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "M_O-exnfgW",
+      "name": "Lead Magnet started",
+      "description": "When a lead magnet is used for a content piece. \nStarted depends on the lead magnet:\n> CTA to a landing page",
+      "tags": [],
+      "categories": [
+        "67UjdiEwa"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {
+          "properties": {
+            "type": "object",
+            "properties": {
+              "lead_magnet_title": {
+                "id": "wTNr5F2G9x",
+                "description": "",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "lead_magnet_type": {
+                "id": "_z0P_X5inP",
+                "description": "A lead magnet can have different types. We track it to measure what type is more successful.",
+                "nameMapping": [],
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "enum": [
+                    "Checklist",
+                    "Free Check",
+                    "eBook"
+                  ]
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "lead_magnet_title",
+              "lead_magnet_type"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "mIpNaJI01q",
+      "name": "Content created",
+      "description": "When a new content item has been created. Which means in most cases - has been published.",
+      "tags": [],
+      "categories": [
+        "67UjdiEwa"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {}
+      }
+    },
+    {
+      "id": "CBm5MBTTkz",
+      "name": "Shop package viewed",
+      "description": "When a package on deepskydata has been viewed\n-> 75% Scroll-Level",
+      "tags": [],
+      "categories": [
+        "p2yGC_YVh"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {
+          "properties": {
+            "type": "object",
+            "properties": {
+              "package_name": {
+                "id": "sKsLvwwl30",
+                "description": "The name of the package",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_id": {
+                "id": "A42I5ADYIi",
+                "description": "a unique package id since we will experiment with the names - so we can build a history even when names are changing.",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_platform": {
+                "id": "OhZBiISj8m",
+                "description": "The platform for which this package is offering a solution",
+                "nameMapping": [],
+                "type": "string",
+                "enum": [
+                  "Google Analytics UA",
+                  "Google Analytics 4",
+                  "Segment",
+                  "Mixpanel",
+                  "Amplitude",
+                  "Rudderstack",
+                  "Matomo",
+                  "Piwik",
+                  "Elbwalker",
+                  "Snowplow"
+                ]
+              },
+              "package_category": {
+                "id": "fdTtTLTPyS",
+                "description": "The category the package belongs to",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_base_price": {
+                "id": "qqLW4dmoRP",
+                "description": "What the package costs without additional products",
+                "nameMapping": [],
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "package_name",
+              "package_id",
+              "package_platform",
+              "package_category",
+              "package_base_price"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "7cR_q9vA0a",
+      "name": "Shop discovered",
+      "description": "The landing event. Always triggered when a user lands on the shop page. Potentially this can also be a calculated event (the good old landing page) - but we like to be present in tracking as well.\n\nThis event holds the marketing information (in general the information where the user is coming from).",
+      "tags": [],
+      "categories": [
+        "p2yGC_YVh"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {
+          "properties": {
+            "type": "object",
+            "properties": {
+              "marketing_source": {
+                "id": "u0BqDJ1zHq",
+                "description": "The source of the marketing campaign.",
+                "nameMapping": [],
+                "type": "string",
+                "enum": [
+                  "Google Ads",
+                  "Facebook",
+                  "LinkedIn",
+                  "Twitter"
+                ]
+              },
+              "marketing_channel": {
+                "id": "TL-lhYcQUW",
+                "description": "The kind of marketing channel used for this campaign",
+                "nameMapping": [],
+                "type": "string",
+                "enum": [
+                  "Paid Search (Brand)",
+                  "Paid Search (Non-Brand)",
+                  "Paid Social (Brand)",
+                  "Paid Social (Non-Brand)"
+                ]
+              },
+              "marketing_story": {
+                "id": "trqYiA-3B_",
+                "description": "which specific storyline/problem case was used in the ads",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "referral": {
+                "id": "Gd6ZAUC-cu",
+                "description": "The referral url ",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "marketing_google_click_id": {
+                "id": "us5mdF5yF6",
+                "description": "The gclid which was used - only after consent",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "marketing_facebook_click_id": {
+                "id": "TH7vRzOzc-",
+                "description": "The fbclid which was used - only after consent",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "marketing_coupon": {
+                "id": "Bgnsl7FcaQ",
+                "description": "if a marketing coupon was used to land on the website",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "shop_landing_page": {
+                "id": "Gq8zjs0r0r",
+                "description": "On which page the user has landed on the website",
+                "nameMapping": [],
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "marketing_source",
+              "marketing_channel",
+              "marketing_story",
+              "referral",
+              "marketing_google_click_id",
+              "marketing_facebook_click_id",
+              "marketing_coupon",
+              "shop_landing_page"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "f4-3JdF12q",
+      "name": "Shop package discovered",
+      "description": "To distinct between just been on the package page and viewed it, we have the discovery event. This will be triggered when a package page has been loaded (the good old eec product viewed event).",
+      "tags": [],
+      "categories": [
+        "p2yGC_YVh"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {
+          "properties": {
+            "type": "object",
+            "properties": {
+              "package_name": {
+                "id": "sKsLvwwl30",
+                "description": "The name of the package",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_id": {
+                "id": "A42I5ADYIi",
+                "description": "a unique package id since we will experiment with the names - so we can build a history even when names are changing.",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_platform": {
+                "id": "OhZBiISj8m",
+                "description": "The platform for which this package is offering a solution",
+                "nameMapping": [],
+                "type": "string",
+                "enum": [
+                  "Google Analytics UA",
+                  "Google Analytics 4",
+                  "Segment",
+                  "Mixpanel",
+                  "Amplitude",
+                  "Rudderstack",
+                  "Matomo",
+                  "Piwik",
+                  "Elbwalker",
+                  "Snowplow"
+                ]
+              },
+              "package_category": {
+                "id": "fdTtTLTPyS",
+                "description": "The category the package belongs to",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_base_price": {
+                "id": "qqLW4dmoRP",
+                "description": "What the package costs without additional products",
+                "nameMapping": [],
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "package_name",
+              "package_id",
+              "package_platform",
+              "package_category",
+              "package_base_price"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "-GlVb477_j",
+      "name": "Shop package options updated",
+      "description": "When a user adds or removes products to the package",
+      "tags": [],
+      "categories": [
+        "p2yGC_YVh"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {
+          "properties": {
+            "type": "object",
+            "properties": {
+              "package_name": {
+                "id": "sKsLvwwl30",
+                "description": "The name of the package",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_id": {
+                "id": "A42I5ADYIi",
+                "description": "a unique package id since we will experiment with the names - so we can build a history even when names are changing.",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_platform": {
+                "id": "OhZBiISj8m",
+                "description": "The platform for which this package is offering a solution",
+                "nameMapping": [],
+                "type": "string",
+                "enum": [
+                  "Google Analytics UA",
+                  "Google Analytics 4",
+                  "Segment",
+                  "Mixpanel",
+                  "Amplitude",
+                  "Rudderstack",
+                  "Matomo",
+                  "Piwik",
+                  "Elbwalker",
+                  "Snowplow"
+                ]
+              },
+              "package_category": {
+                "id": "fdTtTLTPyS",
+                "description": "The category the package belongs to",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_base_price": {
+                "id": "qqLW4dmoRP",
+                "description": "What the package costs without additional products",
+                "nameMapping": [],
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "package_name",
+              "package_id",
+              "package_platform",
+              "package_category",
+              "package_base_price"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "jCDyb8HGkA",
+      "name": "Shop package call initiated",
+      "description": "When the user clicks on schedule a call on the package page",
+      "tags": [],
+      "categories": [
+        "p2yGC_YVh"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {
+          "properties": {
+            "type": "object",
+            "properties": {
+              "package_name": {
+                "id": "sKsLvwwl30",
+                "description": "The name of the package",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_id": {
+                "id": "A42I5ADYIi",
+                "description": "a unique package id since we will experiment with the names - so we can build a history even when names are changing.",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_platform": {
+                "id": "OhZBiISj8m",
+                "description": "The platform for which this package is offering a solution",
+                "nameMapping": [],
+                "type": "string",
+                "enum": [
+                  "Google Analytics UA",
+                  "Google Analytics 4",
+                  "Segment",
+                  "Mixpanel",
+                  "Amplitude",
+                  "Rudderstack",
+                  "Matomo",
+                  "Piwik",
+                  "Elbwalker",
+                  "Snowplow"
+                ]
+              },
+              "package_category": {
+                "id": "fdTtTLTPyS",
+                "description": "The category the package belongs to",
+                "nameMapping": [],
+                "type": "string"
+              },
+              "package_base_price": {
+                "id": "qqLW4dmoRP",
+                "description": "What the package costs without additional products",
+                "nameMapping": [],
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "package_name",
+              "package_id",
+              "package_platform",
+              "package_category",
+              "package_base_price"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "2wepSVQQS8",
+      "name": "Shop package call submitted",
+      "description": "When the user schedules a call in Calendly for a package",
+      "tags": [],
+      "categories": [
+        "p2yGC_YVh"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {}
+      }
+    },
+    {
+      "id": "r3FbaAnxk9",
+      "name": "Shop package clicked",
+      "description": "When a package got clicked in any kind of list",
+      "tags": [],
+      "categories": [
+        "p2yGC_YVh"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {
+          "properties": {
+            "type": "object",
+            "properties": {
+              "shop_list": {
+                "id": "9nNKWSPILX",
+                "description": "In which kind of list the package was clicked",
+                "nameMapping": [],
+                "type": "string"
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "shop_list"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "metrics": {
+    "Noo5s1Fcl": {
+      "id": "Noo5s1Fcl",
+      "name": "Content Consumption Funnel",
+      "description": "{\"ops\":[]}",
+      "categories": [
+        "67UjdiEwa"
+      ],
+      "type": "Funnel",
+      "items": [
+        {
+          "eventId": "rbIJqtHZYD",
+          "where": [],
+          "groupBy": []
+        },
+        {
+          "eventId": "mTqNACI-Dc",
+          "where": [],
+          "groupBy": []
+        },
+        {
+          "eventId": "7EPEc_QXys",
+          "where": [],
+          "groupBy": []
+        },
+        {
+          "eventId": "M_O-exnfgW",
+          "where": [],
+          "groupBy": []
+        },
+        {
+          "eventId": "dwav2JQVWh",
+          "where": [],
+          "groupBy": []
+        }
+      ]
+    },
+    "alYcGXi-g": {
+      "id": "alYcGXi-g",
+      "name": "Content Created",
+      "description": "{\"ops\":[{\"insert\":\"A production metric - how much different content do we create in a time period\\n\"}]}",
+      "categories": [
+        "67UjdiEwa"
+      ],
+      "type": "EventSegmentation",
+      "items": [
+        {
+          "eventId": "mIpNaJI01q",
+          "where": [],
+          "groupBy": []
+        }
+      ]
+    },
+    "Ykk9lxN9B": {
+      "id": "Ykk9lxN9B",
+      "name": "Content viewed / Subscription Rate",
+      "description": "{\"ops\":[]}",
+      "categories": [
+        "67UjdiEwa"
+      ],
+      "type": "Proportion",
+      "items": [
+        {
+          "eventId": "mTqNACI-Dc",
+          "where": [],
+          "groupBy": []
+        },
+        {
+          "eventId": "dwav2JQVWh",
+          "where": [],
+          "groupBy": []
+        }
+      ]
+    },
+    "WWZhAQuqp": {
+      "id": "WWZhAQuqp",
+      "name": "Content views",
+      "description": "{\"ops\":[]}",
+      "categories": [
+        "67UjdiEwa"
+      ],
+      "type": "EventSegmentation",
+      "items": [
+        {
+          "eventId": "mTqNACI-Dc",
+          "where": [],
+          "groupBy": []
+        }
+      ]
+    },
+    "gQV2UiPTh": {
+      "id": "gQV2UiPTh",
+      "name": "Package viewed",
+      "description": "{\"ops\":[]}",
+      "categories": [
+        "p2yGC_YVh"
+      ],
+      "type": "EventSegmentation",
+      "items": [
+        {
+          "eventId": "CBm5MBTTkz",
+          "where": [],
+          "groupBy": []
+        }
+      ]
+    },
+    "3eoRxmX6w": {
+      "id": "3eoRxmX6w",
+      "name": "Deepskydata Shop Funnel",
+      "description": "{\"ops\":[]}",
+      "categories": [
+        "p2yGC_YVh"
+      ],
+      "type": "Funnel",
+      "items": [
+        {
+          "eventId": "7cR_q9vA0a",
+          "where": [],
+          "groupBy": []
+        },
+        {
+          "eventId": "r3FbaAnxk9",
+          "where": [],
+          "groupBy": []
+        },
+        {
+          "eventId": "f4-3JdF12q",
+          "where": [],
+          "groupBy": []
+        },
+        {
+          "eventId": "CBm5MBTTkz",
+          "where": [],
+          "groupBy": []
+        },
+        {
+          "eventId": "-GlVb477_j",
+          "where": [],
+          "groupBy": []
+        },
+        {
+          "eventId": "jCDyb8HGkA",
+          "where": [],
+          "groupBy": []
+        },
+        {
+          "eventId": "2wepSVQQS8",
+          "where": [],
+          "groupBy": []
+        }
+      ]
+    }
+  },
+  "sources": {
+    "iobOfQypU": {
+      "id": "iobOfQypU",
+      "name": "Web - JavaScript",
+      "programmingLanguage": "JavaScript_V2",
+      "developmentPlatform": "Web",
+      "destinations": [
+        "XQl6-EY4Eo",
+        "ddUuZd5784",
+        "BInHrbAeDr"
+      ]
+    },
+    "MIXfuZqkXA": {
+      "id": "MIXfuZqkXA",
+      "name": "Python - Python3",
+      "programmingLanguage": "Python3",
+      "developmentPlatform": "Python",
+      "destinations": [
+        "XQl6-EY4Eo",
+        "ddUuZd5784"
+      ]
+    }
+  },
+  "destinations": {
+    "XQl6-EY4Eo": {
+      "id": "XQl6-EY4Eo",
+      "name": "PostHog",
+      "type": "PostHog"
+    },
+    "ddUuZd5784": {
+      "id": "ddUuZd5784",
+      "name": "Rudderstack",
+      "type": "Rudderstack"
+    },
+    "BInHrbAeDr": {
+      "id": "BInHrbAeDr",
+      "name": "Snowplow",
+      "type": "Snowplow"
+    }
+  },
+  "categories": {
+    "p2yGC_YVh": {
+      "id": "p2yGC_YVh",
+      "name": "Deepskydata Shop",
+      "description": "{\"ops\":[]}",
+      "metrics": [
+        "gQV2UiPTh",
+        "3eoRxmX6w"
+      ],
+      "events": [
+        "7cR_q9vA0a",
+        "jCDyb8HGkA",
+        "2wepSVQQS8",
+        "r3FbaAnxk9",
+        "f4-3JdF12q",
+        "-GlVb477_j",
+        "CBm5MBTTkz"
+      ]
+    },
+    "67UjdiEwa": {
+      "id": "67UjdiEwa",
+      "name": "Content Marketing",
+      "description": "{\"ops\":[]}",
+      "metrics": [
+        "Noo5s1Fcl",
+        "alYcGXi-g",
+        "Ykk9lxN9B",
+        "WWZhAQuqp"
+      ],
+      "events": [
+        "rbIJqtHZYD",
+        "7EPEc_QXys",
+        "mTqNACI-Dc",
+        "M_O-exnfgW",
+        "dwav2JQVWh",
+        "mIpNaJI01q"
+      ]
+    }
+  }
+}
