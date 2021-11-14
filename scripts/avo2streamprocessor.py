@@ -1,7 +1,7 @@
 import json
 
 AVO_SCHEMA_FILE = '../tracking/AvoTrackingPlan.json'
-SP_SCHEMA_FILE = '../tracking/streamprocessor_schema.avro'
+SP_SCHEMA_FILE = '../tracking/streamprocessor_schema.avsc'
 
 BASE_AVRO_SCHEMA = {
     "type": "record",
