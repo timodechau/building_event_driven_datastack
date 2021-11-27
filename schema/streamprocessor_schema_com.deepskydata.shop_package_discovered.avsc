@@ -1,0 +1,38 @@
+{
+    "type": "record",
+    "namespace": "com.deepskydata.shop_package_discovered",
+    "name": "Avro",
+    "fields": [
+        {
+            "name": "event_name",
+            "type": "string",
+            "default": "Shop package discovered",
+            "doc": "To distinct between just been on the package page and viewed it, we have the discovery event. This will be triggered when a package page has been loaded (the good old eec product viewed event). -- avo_id:f4-3JdF12q"
+        },
+        {
+            "name": "package_name",
+            "type": "string",
+            "doc": "The name of the package -- avo_id:sKsLvwwl30"
+        },
+        {
+            "name": "package_id",
+            "type": "string",
+            "doc": "a unique package id since we will experiment with the names - so we can build a history even when names are changing. -- avo_id:A42I5ADYIi"
+        },
+        {
+            "name": "package_platform",
+            "type": "string",
+            "doc": "The platform for which this package is offering a solution -- avo_id:OhZBiISj8m"
+        },
+        {
+            "name": "package_category",
+            "type": "string",
+            "doc": "The category the package belongs to -- avo_id:fdTtTLTPyS"
+        },
+        {
+            "name": "package_base_price",
+            "type": "string",
+            "doc": "What the package costs without additional products -- avo_id:qqLW4dmoRP"
+        }
+    ]
+}

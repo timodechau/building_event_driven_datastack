@@ -1,0 +1,13 @@
+{
+    "type": "record",
+    "namespace": "com.deepskydata.shop_package_call_submitted",
+    "name": "Avro",
+    "fields": [
+        {
+            "name": "event_name",
+            "type": "string",
+            "default": "Shop package call submitted",
+            "doc": "When the user schedules a call in Calendly for a package -- avo_id:2wepSVQQS8"
+        }
+    ]
+}

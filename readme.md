@@ -57,3 +57,11 @@ Maybe you like to also create a data sandbox for yourself - So do it!
 Want to follow my learnings and update?
 Follow me on LinkedIn:
 https://www.linkedin.com/in/timo-dechau/
+
+
+## Video Tutorials
+I am doing all the different steps also as educational videos in my Youtube Channel:
+https://www.youtube.com/channel/UCQSHdIS2YdFa6wleYHjK6Jw
+
+01 - How to create a Metric Framework
+https://www.youtube.com/watch?v=oDImXY8J4Oc

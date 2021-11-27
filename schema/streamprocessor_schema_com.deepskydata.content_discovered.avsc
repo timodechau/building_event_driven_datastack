@@ -1,0 +1,13 @@
+{
+    "type": "record",
+    "namespace": "com.deepskydata.content_discovered",
+    "name": "Avro",
+    "fields": [
+        {
+            "name": "event_name",
+            "type": "string",
+            "default": "Content discovered",
+            "doc": "Just when someone lands on a content piece.\nLinkedIn: views\nBlog: Pageviews\nYT: Video started - 5% -- avo_id:rbIJqtHZYD"
+        }
+    ]
+}

@@ -4,6 +4,11 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+avro-validator = "*"
+python-slugify = "*"
+avro-python3 = "*"
+google-cloud-pubsub = "*"
+python-dotenv = "*"
 
 [dev-packages]
 

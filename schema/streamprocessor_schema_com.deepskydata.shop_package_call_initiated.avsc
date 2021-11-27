@@ -1,0 +1,38 @@
+{
+    "type": "record",
+    "namespace": "com.deepskydata.shop_package_call_initiated",
+    "name": "Avro",
+    "fields": [
+        {
+            "name": "event_name",
+            "type": "string",
+            "default": "Shop package call initiated",
+            "doc": "When the user clicks on schedule a call on the package page -- avo_id:jCDyb8HGkA"
+        },
+        {
+            "name": "package_name",
+            "type": "string",
+            "doc": "The name of the package -- avo_id:sKsLvwwl30"
+        },
+        {
+            "name": "package_id",
+            "type": "string",
+            "doc": "a unique package id since we will experiment with the names - so we can build a history even when names are changing. -- avo_id:A42I5ADYIi"
+        },
+        {
+            "name": "package_platform",
+            "type": "string",
+            "doc": "The platform for which this package is offering a solution -- avo_id:OhZBiISj8m"
+        },
+        {
+            "name": "package_category",
+            "type": "string",
+            "doc": "The category the package belongs to -- avo_id:fdTtTLTPyS"
+        },
+        {
+            "name": "package_base_price",
+            "type": "string",
+            "doc": "What the package costs without additional products -- avo_id:qqLW4dmoRP"
+        }
+    ]
+}

@@ -165,3 +165,6 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+#service account files
+deepskydata-*.json

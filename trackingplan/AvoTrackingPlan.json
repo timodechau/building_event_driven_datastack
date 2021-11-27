@@ -720,6 +720,25 @@
           }
         }
       }
+    },
+    {
+      "id": "bjoljMDm_t",
+      "name": "CRM Contact created",
+      "description": "Triggers when a new contact has been created in Hubspot",
+      "tags": [],
+      "categories": [
+        "i-xHybK90"
+      ],
+      "rules": {
+        "$schema": "http://json-schema.org/draft-06/schema#",
+        "type": "object",
+        "required": [
+          "properties",
+          "nameMapping"
+        ],
+        "nameMapping": [],
+        "properties": {}
+      }
     }
   ],
   "metrics": {
@@ -916,6 +935,15 @@
     }
   },
   "categories": {
+    "i-xHybK90": {
+      "id": "i-xHybK90",
+      "name": "CRM",
+      "description": "{\"ops\":[]}",
+      "metrics": [],
+      "events": [
+        "bjoljMDm_t"
+      ]
+    },
     "p2yGC_YVh": {
       "id": "p2yGC_YVh",
       "name": "Deepskydata Shop",

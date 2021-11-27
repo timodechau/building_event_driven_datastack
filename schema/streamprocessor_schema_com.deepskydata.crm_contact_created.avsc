@@ -1,0 +1,13 @@
+{
+    "type": "record",
+    "namespace": "com.deepskydata.crm_contact_created",
+    "name": "Avro",
+    "fields": [
+        {
+            "name": "event_name",
+            "type": "string",
+            "default": "CRM Contact created",
+            "doc": "Triggers when a new contact has been created in Hubspot -- avo_id:bjoljMDm_t"
+        }
+    ]
+}

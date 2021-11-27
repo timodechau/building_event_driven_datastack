@@ -1,0 +1,38 @@
+{
+    "type": "record",
+    "namespace": "com.deepskydata.content_engagement_submitted",
+    "name": "Avro",
+    "fields": [
+        {
+            "name": "event_name",
+            "type": "string",
+            "default": "Content engagement submitted",
+            "doc": "Engagement means a feedback for the content\nYoutube - like or comment\nBlog - Was useful\nLinkedIn - like or comment\nTwitter - like or comment\n -- avo_id:7EPEc_QXys"
+        },
+        {
+            "name": "content_title",
+            "type": "string",
+            "doc": "The current title of the content -- avo_id:hO8QokB6hW"
+        },
+        {
+            "name": "content_id",
+            "type": "string",
+            "doc": "unique id if the content has such one - makes it easier to track content over time when title is changed. -- avo_id:dq_ffocLUk"
+        },
+        {
+            "name": "content_tags",
+            "type": "string",
+            "doc": "adding all tags used for this content -- avo_id:Q8ULW3QHzA"
+        },
+        {
+            "name": "content_platform",
+            "type": "string",
+            "doc": "The content platform this content has been published to. -- avo_id:5X3uMzRwPo"
+        },
+        {
+            "name": "engagement_type",
+            "type": "string",
+            "doc": "The type of engagement - most often just a like but some platform use different reactions. -- avo_id:_wLQPc-irV"
+        }
+    ]
+}

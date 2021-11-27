@@ -1,0 +1,18 @@
+{
+    "type": "record",
+    "namespace": "com.deepskydata.subscription_created",
+    "name": "Avro",
+    "fields": [
+        {
+            "name": "event_name",
+            "type": "string",
+            "default": "Subscription created",
+            "doc": "A valid subscription has been created for the content channel:\nBlog - Subscribed to Newsletter\nShop - Subscribed to Newsletter\nLinkedIn - Followed\nYoutube - Subscribed to Channel\n -- avo_id:dwav2JQVWh"
+        },
+        {
+            "name": "content_platform",
+            "type": "string",
+            "doc": "The content platform this content has been published to. -- avo_id:5X3uMzRwPo"
+        }
+    ]
+}

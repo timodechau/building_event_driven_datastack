@@ -1,0 +1,33 @@
+{
+    "type": "record",
+    "namespace": "com.deepskydata.content_viewed",
+    "name": "Avro",
+    "fields": [
+        {
+            "name": "event_name",
+            "type": "string",
+            "default": "Content viewed",
+            "doc": "Tracked when different kind of content is viewed\n\nReading Content (Blog, Docs): 75% scrolldepth\nViewing Content (Video): 50% view time -- avo_id:mTqNACI-Dc"
+        },
+        {
+            "name": "content_title",
+            "type": "string",
+            "doc": "The current title of the content -- avo_id:hO8QokB6hW"
+        },
+        {
+            "name": "content_id",
+            "type": "string",
+            "doc": "unique id if the content has such one - makes it easier to track content over time when title is changed. -- avo_id:dq_ffocLUk"
+        },
+        {
+            "name": "content_tags",
+            "type": "string",
+            "doc": "adding all tags used for this content -- avo_id:Q8ULW3QHzA"
+        },
+        {
+            "name": "content_platform",
+            "type": "string",
+            "doc": "The content platform this content has been published to. -- avo_id:5X3uMzRwPo"
+        }
+    ]
+}

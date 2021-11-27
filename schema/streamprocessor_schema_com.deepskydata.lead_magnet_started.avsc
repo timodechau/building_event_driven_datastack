@@ -1,0 +1,23 @@
+{
+    "type": "record",
+    "namespace": "com.deepskydata.lead_magnet_started",
+    "name": "Avro",
+    "fields": [
+        {
+            "name": "event_name",
+            "type": "string",
+            "default": "Lead Magnet started",
+            "doc": "When a lead magnet is used for a content piece. \nStarted depends on the lead magnet:\n> CTA to a landing page -- avo_id:M_O-exnfgW"
+        },
+        {
+            "name": "lead_magnet_title",
+            "type": "string",
+            "doc": " -- avo_id:wTNr5F2G9x"
+        },
+        {
+            "name": "lead_magnet_type",
+            "type": "string",
+            "doc": "A lead magnet can have different types. We track it to measure what type is more successful. -- avo_id:_z0P_X5inP"
+        }
+    ]
+}

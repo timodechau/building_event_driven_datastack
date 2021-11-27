@@ -1,0 +1,13 @@
+{
+    "type": "record",
+    "namespace": "com.deepskydata.content_created",
+    "name": "Avro",
+    "fields": [
+        {
+            "name": "event_name",
+            "type": "string",
+            "default": "Content created",
+            "doc": "When a new content item has been created. Which means in most cases - has been published. -- avo_id:mIpNaJI01q"
+        }
+    ]
+}

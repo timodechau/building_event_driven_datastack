@@ -1,0 +1,53 @@
+{
+    "type": "record",
+    "namespace": "com.deepskydata.shop_discovered",
+    "name": "Avro",
+    "fields": [
+        {
+            "name": "event_name",
+            "type": "string",
+            "default": "Shop discovered",
+            "doc": "The landing event. Always triggered when a user lands on the shop page. Potentially this can also be a calculated event (the good old landing page) - but we like to be present in tracking as well.\n\nThis event holds the marketing information (in general the information where the user is coming from). -- avo_id:7cR_q9vA0a"
+        },
+        {
+            "name": "marketing_source",
+            "type": "string",
+            "doc": "The source of the marketing campaign. -- avo_id:u0BqDJ1zHq"
+        },
+        {
+            "name": "marketing_channel",
+            "type": "string",
+            "doc": "The kind of marketing channel used for this campaign -- avo_id:TL-lhYcQUW"
+        },
+        {
+            "name": "marketing_story",
+            "type": "string",
+            "doc": "which specific storyline/problem case was used in the ads -- avo_id:trqYiA-3B_"
+        },
+        {
+            "name": "referral",
+            "type": "string",
+            "doc": "The referral url  -- avo_id:Gd6ZAUC-cu"
+        },
+        {
+            "name": "marketing_google_click_id",
+            "type": "string",
+            "doc": "The gclid which was used - only after consent -- avo_id:us5mdF5yF6"
+        },
+        {
+            "name": "marketing_facebook_click_id",
+            "type": "string",
+            "doc": "The fbclid which was used - only after consent -- avo_id:TH7vRzOzc-"
+        },
+        {
+            "name": "marketing_coupon",
+            "type": "string",
+            "doc": "if a marketing coupon was used to land on the website -- avo_id:Bgnsl7FcaQ"
+        },
+        {
+            "name": "shop_landing_page",
+            "type": "string",
+            "doc": "On which page the user has landed on the website -- avo_id:Gq8zjs0r0r"
+        }
+    ]
+}
